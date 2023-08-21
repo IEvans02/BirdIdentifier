@@ -2,6 +2,10 @@ import cv2
 import numpy as np
 import time
 import tensorflow as tf
+import os
+from keras.models import load_model
+from keras.preprocessing import image
+from keras.applications.vgg16 import preprocess_input
 
 # Define the classes for bird breeds
 bird_breeds = [
@@ -27,8 +31,10 @@ bird_breeds = [
     'Wren'
 ]
 
-# Load the trained model
-model = tf.keras.models.load_model('/Users/ioanevans/Documents/Python/WhatsInMyGarden/model.h5')
+MODEL_PATH = 'model.h5'
+
+# Load the pre-trained model
+model = load_model(MODEL_PATH)
 
 def preprocess_frame(frame):
     image_width, image_height = 150, 150
