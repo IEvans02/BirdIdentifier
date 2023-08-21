@@ -23,6 +23,6 @@ You need to cd to the file path, i.e. in my case, its WhatsInMyGarden.
 Then, 
 ```
 python app.py
-``` and it will run on a local server.
+ and it will run on a local server.
 
 **Warning:** If, like me, you have an M1 chip device, you may encounter "Hardware problems" upon running. See https://stackoverflow.com/questions/65383338/zsh-illegal-hardware-instruction-python-when-installing-tensorflow-on-macbook or consider installing a Flask environment which worked for me.
