@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bird Classifier Result</title>
+</head>
+<body>
+    <h1>Result</h1>
+    <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Uploaded Image">
+    <p>Predicted Bird Breed: {{ predicted_bird }}</p>
+</body>
+</html>
