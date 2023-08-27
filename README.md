@@ -8,7 +8,7 @@ Video classification has also been added with the return a JSON output of a pred
 Once you have your model.h5 file, you need to cd to the file path, i.e. in my case, its WhatsInMyGarden.
 Then,
 
-python app.py
+```python app.py```
 
 and it will run on a local server.
 
