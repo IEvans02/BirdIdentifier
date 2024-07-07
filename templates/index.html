@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Garden Classifier</title>
+    <!-- Include Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <h1 class="title is-4">WhatsInMyGarden</h1>
+            </a>
+        </div>
+        <div class="navbar-end">
+            <!-- Add navigation links here -->
+            <a class="navbar-item" href="/">Home</a>
+            <a class="navbar-item" href="/contact">Contact</a>
+            <div class="navbar-item">
+                <a class="button is-primary" href="/login">
+                    <strong>Login</strong>
+                </a>
+            </div>
+        </div>        
+    </nav>
+
+    <div class="hero is-fullheight is-primary">
+        <div class="hero-body has-text-centered">
+            <div class="container">
+                <h1 class="title">Your Bird Classifier</h1>
+                <h2 class="subtitle">Submit your bird photos and videos and have them classified with 83% accuracy*! Video bugs fixes coming soon.</h2>
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <div class="field">
+                        <label class="label">Select a Photo:</label>
+                        <div class="control">
+                            <input type="file" name="file" class="input">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <input type="submit" value="Upload" class="button is-primary">
+                        </div>
+                    </div>
+                </form>
+                <!-- Add a div for the images underneath the Upload button -->
+                <div class="images-container">
+                    <!-- first image -->
+                    <img src="https://pixabay.com/photos/kingfisher-bird-close-up-perched-2046453/" alt="Kingfisher Image" width="375">
+                    <!-- second image -->
+                    <img src="https://pixabay.com/photos/kingfisher-bird-close-up-perched-2046453/" alt="Bird Image 2" width="375">
+                </div>
+               <h3>*Model trained on top 20 most common UK birds</h3> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
